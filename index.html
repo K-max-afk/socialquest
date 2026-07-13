@@ -1,1 +1,184 @@
-<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>SocialQuest</title><link rel="stylesheet" href="style.css"></head><body><header><h1>🌍 SocialQuest</h1><p>Explora • Aprende • Conquista</p></header><main><section class="card"><h2>La Economía Mundial y el Comercio Internacional</h2><p>Recurso didáctico interactivo.</p><button onclick="mostrar()">Comenzar</button></section><section id="contenido" class="hidden"><h3>¿Qué es la economía mundial?</h3><p>Es el conjunto de actividades económicas que conectan a los países mediante la producción, el consumo y el comercio.</p><h3>¿Qué es el comercio internacional?</h3><p>Es el intercambio de bienes y servicios entre diferentes países.</p><button onclick="iniciarQuiz()">Ir al juego</button></section><section id="quiz" class="hidden"><h3 id="pregunta"></h3><div id="opciones"></div><p id="resultado"></p></section></main><script src="script.js"></script></body></html>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SocialQuest | Ciencias Sociales</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Fuente -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<header class="hero">
+
+    <h1>🌍 SocialQuest</h1>
+
+    <p class="slogan">
+        Explora • Aprende • Conquista
+    </p>
+
+    <h2>
+        La Economía Mundial y el Comercio Internacional
+    </h2>
+
+    <button id="btnComenzar">
+        🚀 Comenzar misión
+    </button>
+
+</header>
+
+<main id="app">
+
+    <!-- SECCIÓN 1 -->
+    <section class="card hidden" id="intro">
+
+        <h2>¿Qué es la Economía Mundial?</h2>
+
+        <p>
+            La economía mundial comprende todas las actividades económicas
+            que realizan los países mediante la producción, distribución,
+            intercambio y consumo de bienes y servicios.
+        </p>
+
+        <button class="next" data-next="comercio">
+            Siguiente →
+        </button>
+
+    </section>
+
+    <!-- SECCIÓN 2 -->
+
+    <section class="card hidden" id="comercio">
+
+        <h2>¿Qué es el Comercio Internacional?</h2>
+
+        <p>
+
+            Es el intercambio de bienes y servicios entre diferentes países,
+            permitiendo satisfacer necesidades y favorecer el desarrollo
+            económico.
+
+        </p>
+
+        <button class="next" data-next="exportaciones">
+            Siguiente →
+        </button>
+
+    </section>
+
+    <!-- SECCIÓN 3 -->
+
+    <section class="card hidden" id="exportaciones">
+
+        <h2>Exportaciones e Importaciones</h2>
+
+        <div class="grid">
+
+            <div>
+
+                <h3>📦 Exportaciones</h3>
+
+                <p>
+
+                    Son los productos que un país vende a otros países.
+
+                </p>
+
+            </div>
+
+            <div>
+
+                <h3>🚢 Importaciones</h3>
+
+                <p>
+
+                    Son los productos que un país compra del extranjero.
+
+                </p>
+
+            </div>
+
+        </div>
+
+        <button class="next" data-next="ventajas">
+
+            Siguiente →
+
+        </button>
+
+    </section>
+
+    <!-- SECCIÓN 4 -->
+
+    <section class="card hidden" id="ventajas">
+
+        <h2>Ventajas del Comercio Internacional</h2>
+
+        <ul>
+
+            <li>✔ Mayor variedad de productos.</li>
+
+            <li>✔ Crecimiento económico.</li>
+
+            <li>✔ Generación de empleo.</li>
+
+            <li>✔ Acceso a nuevas tecnologías.</li>
+
+        </ul>
+
+        <button class="next" data-next="quiz">
+
+            Ir al desafío 🎮
+
+        </button>
+
+    </section>
+
+    <!-- QUIZ -->
+
+    <section class="card hidden" id="quiz">
+
+        <h2 id="pregunta"></h2>
+
+        <div id="opciones"></div>
+
+        <div class="progreso">
+
+            <div id="barra"></div>
+
+        </div>
+
+    </section>
+
+    <!-- RESULTADO -->
+
+    <section class="card hidden" id="resultado">
+
+        <h2>🏆 ¡Misión completada!</h2>
+
+        <h3 id="puntajeFinal"></h3>
+
+        <button onclick="location.reload()">
+
+            Volver a jugar
+
+        </button>
+
+    </section>
+
+</main>
+
+<footer>
+
+    SocialQuest © 2026
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
