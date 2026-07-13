@@ -1,2 +1,0 @@
-# SocialQuest
-Proyecto educativo.
