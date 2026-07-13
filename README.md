@@ -1,2 +1,2 @@
-# socialquest
-Recurso didáctico interactivo
+# SocialQuest
+Proyecto educativo.
